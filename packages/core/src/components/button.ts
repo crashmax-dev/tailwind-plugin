@@ -18,7 +18,7 @@ export function Button({ addComponents }: PluginAPI) {
       '@apply inline-flex items-center justify-center flex-shrink-0 align-middle': {},
       '@apply font-medium leading-tight': {},
       'transitionProperty': 'background-color, border-color, color, fill, stroke, box-shadow',
-      '@apply	duration-75 ease-out': {},
+      '@apply duration-75 ease-out': {},
       '@apply outline-none appearance-none cursor-pointer select-none whitespace-nowrap': {},
       '@apply focus:outline-none': {},
 
