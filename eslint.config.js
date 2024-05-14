@@ -4,6 +4,7 @@ export default antfu({
   typescript: true,
   markdown: true,
   yaml: true,
+  jsx: true,
   rules: {
     'curly': 'off',
     'no-console': 'off',

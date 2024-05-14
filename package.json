@@ -1,5 +1,5 @@
 {
-  "name": "@pnpm-workspace/root",
+  "name": "@ui/workspace",
   "type": "module",
   "private": true,
   "packageManager": "pnpm@9.0.0",
@@ -11,14 +11,13 @@
   },
   "scripts": {
     "dev": "turbo dev",
-    "build": "turbo build --filter=./apps/*",
-    "build:packages": "turbo build --filter=./packages/*",
+    "build": "turbo build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "2.17.0",
-    "@types/node": "20.12.11",
+    "@antfu/eslint-config": "2.18.0",
+    "@types/node": "20.12.12",
     "turbo": "1.13.3",
     "typescript": "5.4.5",
     "vite": "5.2.11"
