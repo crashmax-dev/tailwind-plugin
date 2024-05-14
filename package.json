@@ -1,0 +1,26 @@
+{
+  "name": "@pnpm-workspace/root",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20.12.0"
+  },
+  "volta": {
+    "node": "20.12.2"
+  },
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build --filter=./apps/*",
+    "build:packages": "turbo build --filter=./packages/*",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "2.17.0",
+    "@types/node": "20.12.11",
+    "turbo": "1.13.3",
+    "typescript": "5.4.5",
+    "vite": "5.2.11"
+  }
+}
