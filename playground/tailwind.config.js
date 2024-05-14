@@ -1,4 +1,4 @@
-import { uiPlugin } from '@ui/tailwind'
+import { uiPlugin } from '@ui/core'
 
 /** @type {import('tailwindcss').Config} */
 export default {

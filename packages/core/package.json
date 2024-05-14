@@ -1,25 +1,24 @@
 {
-  "name": "@ui/tailwind",
+  "name": "@ui/core",
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "exports": {
-    ".": "./src/index.ts"
-  },
-  "types": "./src/index.ts",
+  "exports": "./src/index.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "pnpm type-check --watch",
-    "build": "pnpm type-check",
-    "type-check": "tsc"
+    "build": "pnpm type-check && tsc",
+    "type-check": "tsc",
+    "prebuild": "rm -rf dist"
   },
   "dependencies": {
     "clsx": "2.1.1",
     "tailwind-merge": "2.3.0"
   },
   "devDependencies": {
+    "@crashmax/tsconfig": "2.1.0",
     "tailwindcss": "3.4.3"
   }
 }

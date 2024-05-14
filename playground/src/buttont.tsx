@@ -1,4 +1,4 @@
-import { cn } from '@ui/tailwind'
+import { cn } from '@ui/core'
 import { type VariantProps, cva } from 'class-variance-authority'
 
 import type { JSX } from '@reatom/jsx/jsx-runtime'
@@ -29,12 +29,17 @@ interface ButtonProps {
   variant?: ButtonVariants['variant']
   size?: ButtonVariants['size']
   class?: string
+  disabled?: boolean
 }
 
 export function Button(props: ButtonProps) {
   return (
     <button
-      class={cn(buttonVariants({ variant: props.variant, size: props.size }), props.class)}
+      disabled={props.disabled}
+      class={cn(
+        buttonVariants({ variant: props.variant, size: props.size }),
+        props.class
+      )}
     >
       {props.children}
     </button>
